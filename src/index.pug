@@ -1,0 +1,63 @@
+doctype html
+html(lang="ru")
+	include modules/head	
+
+	body
+		.wrapper 
+			
+			include modules/header
+			
+			main.main-section
+				.main-slider.swiper
+					.swiper-wrapper
+						.swiper-slide
+							.main-slider__slide 
+								.main-slider__slide_image 
+									img(src="assets/images/slide-bg.png", alt="")
+								.main-slider__slide_content 
+									.container-fluid
+										.main-slider__slide_content_block 
+											.main-slider__slide_content_block-left
+												h1.title Качественный металлопрокат 
+												p Напрямую от производителя
+											.main-slider__slide_content_block-right
+												a.button.button-light(href="#") Перейти в каталог
+						.swiper-slide
+							.main-slider__slide 
+								.main-slider__slide_image 
+									img(src="assets/images/slide-bg.png", alt="")
+								.main-slider__slide_content 
+									.container-fluid
+										.main-slider__slide_content_block 
+											.main-slider__slide_content_block-left
+												p.title Качественный металлопрокат 
+												p Напрямую от производителя
+											.main-slider__slide_content_block-right
+												a.button.button-light(href="#") Перейти в каталог
+						.swiper-slide
+							.main-slider__slide 
+								.main-slider__slide_image 
+									img(src="assets/images/slide-bg.png", alt="")
+								.main-slider__slide_content 
+									.container-fluid
+										.main-slider__slide_content_block 
+											.main-slider__slide_content_block-left
+												p.title Качественный металлопрокат 
+												p Напрямую от производителя
+											.main-slider__slide_content_block-right
+												a.button.button-light(href="#") Перейти в каталог
+					.swiper-button-prev.main-slider-prev
+						svg(xmlns="http://www.w3.org/2000/svg" width="44" height="45" viewBox="0 0 44 45" fill="none")
+							path(d="M0.292893 22.2929C-0.0976295 22.6834 -0.0976296 23.3166 0.292892 23.7071L6.65685 30.0711C7.04738 30.4616 7.68054 30.4616 8.07107 30.0711C8.46159 29.6805 8.46159 29.0474 8.07107 28.6569L2.41422 23L8.07107 17.3431C8.46159 16.9526 8.46159 16.3195 8.07107 15.9289C7.68054 15.5384 7.04738 15.5384 6.65685 15.9289L0.292893 22.2929ZM44 22L1 22L1 24L44 24L44 22Z" fill="white")
+					.swiper-button-next.main-slider-next
+						svg(xmlns="http://www.w3.org/2000/svg" width="44" height="45" viewBox="0 0 44 45" fill="none")
+							path(d="M43.7071 22.2929C44.0976 22.6834 44.0976 23.3166 43.7071 23.7071L37.3431 30.0711C36.9526 30.4616 36.3195 30.4616 35.9289 30.0711C35.5384 29.6805 35.5384 29.0474 35.9289 28.6569L41.5858 23L35.9289 17.3431C35.5384 16.9526 35.5384 16.3195 35.9289 15.9289C36.3195 15.5384 36.9526 15.5384 37.3431 15.9289L43.7071 22.2929ZM-8.74228e-08 22L43 22L43 24L8.74228e-08 24L-8.74228e-08 22Z" fill="white")
+					.main-slider_nav 
+						.main-slider__counter.main-slider__current
+							p.slide-current 01
+						.swiper-pagination.main-slider-pagination
+						.main-slider__counter.main-slider__total
+							p.slide-total 03
+			
+			
+		include modules/scripts
